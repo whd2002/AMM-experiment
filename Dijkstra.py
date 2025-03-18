@@ -101,23 +101,12 @@ def find_best_amm_and_path(amms, demand, paths_graph, start_node, end_nodes, is_
 
 if __name__ == "__main__":
     amms = [
-        UniswapV2AMM(initial_money=5000000, initial_power=5000000),
-        UniswapV2AMM(initial_money=5000000, initial_power=4800000),
-        UniswapV2AMM(initial_money=5000000, initial_power=5200000)
+        UniswapV2AMM(initial_money=, initial_power=),
     ]
 
 
     paths_graph = {
-        "user": [("node1", 0.01), ("node2", 0.03)],
         "node1": [("node3", 0.02), ("amm1", 0.05)],
-        "node2": [("node4", 0.04), ("node5", 0.02)],
-        "node3": [("amm1", 0.02), ("amm2", 0.04)],
-        "node4": [("amm2", 0.01), ("node6", 0.03)],
-        "node5": [("amm3", 0.02), ("node6", 0.01)],
-        "node6": [("amm3", 0.01)],
-        "amm1": [("node3", 0.02), ("node1", 0.05)],
-        "amm2": [("node4", 0.01), ("node3", 0.04)],
-        "amm3": [("node5", 0.02), ("node6", 0.01)]
     }
 
     start_node = "user"
