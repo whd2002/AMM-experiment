@@ -92,10 +92,8 @@ if __name__ == "__main__":
     # Add paths
     market.add_path("User1", "User2", loss=0.05)
 
-    # Calculate trades
     trades = market.calculate_trade()
 
-    # Display trades
     for trade in trades:
         print(f"Trade: Buyer {trade['buyer']} buys from Seller {trade['seller']}")
         print(f"Amount: {trade['amount']} units, Total Cost: {trade['total_cost']}")
