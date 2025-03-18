@@ -101,9 +101,9 @@ def find_best_amm_and_path(amms, demand, paths_graph, start_node, end_nodes, is_
 
 if __name__ == "__main__":
     amms = [
-        UniswapV2AMM(initial_money=5000000, initial_power=5000000),
-        UniswapV2AMM(initial_money=5000000, initial_power=4800000),
-        UniswapV2AMM(initial_money=5000000, initial_power=5200000)
+        UniswapV2AMM(initial_money=, initial_power=),
+        UniswapV2AMM(initial_money=, initial_power=),
+        UniswapV2AMM(initial_money=, initial_power=)
     ]
 
 
